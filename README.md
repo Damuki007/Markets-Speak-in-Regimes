@@ -9,6 +9,12 @@ from *"where will the price go?"* to *"what regime are we in, and how is risk be
 > modellable signal. The 2025–2026 Vodacom takeover provides a live, out-of-sample confirmation of
 > this framework.
 
+![Safaricom price shaded by volatility regime](assets/regime-shaded-price.png)
+
+<p align="center"><em>Five years of Safaricom's price, painted with its own volatility regimes —
+calm accumulation (green) through to crisis (red) — segmented by Ruptures PELT change-point detection
+over a four-component GMM. Regime, not price direction, is the signal.</em></p>
+
 ---
 
 ## What's in this repository
