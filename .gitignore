@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# OS / editor / Office lock files
+.DS_Store
+Thumbs.db
+~$*
+
+# Local data artifacts (the committed base CSV + raw XLSX are kept; these are regenerated locally)
+dashboard/data/safcom_eodhd_2025_2026.csv
+dashboard/data/safcom_afrimarket_prices.csv
