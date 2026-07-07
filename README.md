@@ -16,9 +16,26 @@ from *"where will the price go?"* to *"what regime are we in, and how is risk be
 | Path | Description |
 |------|-------------|
 | [`report/`](report/) | **Markets-Speak-in-Regimes-Report.docx** — the full analytical report (final, publish-ready). |
-| [`presentation/`](presentation/) | **Markets-Speak-in-Regimes-Slides.pptx** — the accompanying deck, with speaker notes. |
+| [`presentation/`](presentation/) | **Markets-Speak-in-Regimes-Slides.pptx** — the accompanying summary deck. |
+| [`notebooks/`](notebooks/) | The analysis notebooks — see *Notebooks* below. |
 | [`dashboard/`](dashboard/) | Interactive **Streamlit** risk dashboard (price, volatility, regimes, VaR). See *Running the dashboard* below. |
 | [`data/`](data/) | **SAFCOM_5YR_PRICE.xlsx** — the source dataset (1,260 NSE trading days, 26 Aug 2020 – 15 Sep 2025). |
+
+---
+
+## Notebooks
+
+Two Jupyter notebooks in [`notebooks/`](notebooks/) document the analysis:
+
+- **`Jeff_modeling.ipynb`** — the initial exploratory analysis and modelling on the 5-year dataset
+  (diagnostics, decomposition, structural breaks, and early volatility/regime work) that the report
+  is built on.
+- **`Jeff_modeling_Phase1_Corrections.ipynb`** — a companion change-log notebook that documents and
+  *verifies* a set of corrections to the initial analysis (STL period, QQ-plot skew reading, GMM
+  regime-count selection via the BIC elbow, and a two-test **Kupiec + Christoffersen** VaR backtest).
+  Each item is presented as *problem → before/after → why* and re-run live on the data.
+
+To run them: `pip install -r dashboard/requirements.txt jupyter`, then `jupyter lab notebooks/`.
 
 ---
 
