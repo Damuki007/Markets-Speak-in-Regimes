@@ -102,6 +102,12 @@ python dashboard/data/merge_data.py    # rebuilds safcom_base.csv from data/SAFC
   (independence). The conditional GARCH-t VaR passes both; a naive constant VaR passes coverage but
   its exceptions cluster.
 
+![GARCH-t conditional Value-at-Risk with backtest](assets/var-backtest.png)
+
+<p align="center"><em>The 95% VaR band (purple) breathes with volatility; breaches (red) stay spread
+out rather than clustering — passing both the Kupiec coverage and Christoffersen independence tests.
+Returns are hard to predict; risk is not.</em></p>
+
 ## Data note
 
 `data/SAFCOM_5YR_PRICE.xlsx` is a clean NSE trading calendar (weekends and exchange holidays already
